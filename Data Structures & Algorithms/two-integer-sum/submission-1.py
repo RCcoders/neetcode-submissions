@@ -3,9 +3,9 @@ class Solution:
         seen = {}
 
         for i, num in enumerate(nums):
-            comp = target - num
-            if comp in seen:
-                return [seen[comp], i]
-
-            seen[num] = i
+            cmp = target - num
+            if cmp in seen:
+                return [seen[cmp], i]
+            
+            seen[nums[i]] = i
         return []
