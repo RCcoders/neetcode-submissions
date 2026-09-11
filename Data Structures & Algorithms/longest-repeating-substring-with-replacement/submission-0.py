@@ -12,7 +12,6 @@ class Solution:
 
             while (right - left + 1) - max_freq > k:
                 freq[s[left]] -= 1
-
                 left += 1
 
             ans = max(ans, right - left + 1)
